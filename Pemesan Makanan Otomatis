@@ -1,0 +1,231 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+void enter(){
+    cin.ignore();
+    cout << "Tekan Enter untuk lanjut." <<endl;
+    cin.get();
+}
+
+
+class ListMenu {
+    public:
+        string menu;
+        int harga;
+
+        ListMenu(string aMenu, int aHarga){
+            menu = aMenu;
+            harga = aHarga;
+        }
+
+
+};
+
+int main()
+{
+    int menuPilihan, jumlah1, jumlah2, jumlah3, jumlah4, jumlah5, jumlah6, jumlah7, jumlah8;
+    int jumlah9, jumlah10, jumlah11, jumlah12, jumlah13, jumlah14, jumlah15, totalHarga;
+
+
+    jumlah1 = 0;
+    jumlah2 = 0;
+    jumlah3 = 0;
+    jumlah4 = 0;
+    jumlah5 = 0;
+    jumlah6 = 0;
+    jumlah7 = 0;
+    jumlah8 = 0;
+    jumlah9 = 0;
+    jumlah10 = 0;
+    jumlah11 = 0;
+    jumlah12 = 0;
+    jumlah13 = 0;
+    jumlah14 = 0;
+    jumlah15 = 0;
+
+
+    ListMenu menu1("Nasi Goreng", 10000);
+    ListMenu menu2("Mie Goreng", 8000);
+    ListMenu menu3("Mie Rebus", 8000);
+    ListMenu menu4("Ayam Goreng", 12500);
+    ListMenu menu5("Ayam Bakar", 16000);
+    ListMenu menu6("Lele Goreng", 9000);
+    ListMenu menu7("Sop Ayam", 9000);
+    ListMenu menu8("Soto Ayam", 10000);
+    ListMenu menu9("Cah Kangkung", 7000);
+    ListMenu menu10("Es Teh", 3500);
+    ListMenu menu11("Teh Anget", 3500);
+    ListMenu menu12("Es Jeruk", 4000);
+    ListMenu menu13("Jeruk Anget", 4000);
+    ListMenu menu14("Es Kopi", 5000);
+    ListMenu menu15("Kopi Anget", 5000);
+
+        cout << "Selamat datang di warung makan 'Nugas Yok'," <<endl;
+        cout << "silahkan pesan menu yang ada." <<endl;
+        cout <<endl;
+        do{
+        cout << "======Menu Makanan & Minuman======" <<endl;
+        cout << "1." << menu1.menu << "\t\tRp." << menu1.harga <<endl;
+        cout << "2." << menu2.menu << "\t\tRp." << menu2.harga <<endl;
+        cout << "3." << menu3.menu << "\t\tRp." << menu3.harga <<endl;
+        cout << "4." << menu4.menu << "\t\tRp." << menu4.harga <<endl;
+        cout << "5." << menu5.menu << "\t\tRp." << menu5.harga <<endl;
+        cout << "6." << menu6.menu << "\t\tRp." << menu6.harga <<endl;
+        cout << "7." << menu7.menu << "\t\tRp." << menu7.harga <<endl;
+        cout << "8." << menu8.menu << "\t\tRp." << menu8.harga <<endl;
+        cout << "9." << menu9.menu << "\t\tRp." << menu9.harga <<endl;
+        cout << "10." << menu10.menu << "\t\tRp." << menu10.harga <<endl;
+        cout << "11." << menu11.menu << "\t\tRp." << menu11.harga <<endl;
+        cout << "12." << menu12.menu << "\t\tRp." << menu12.harga <<endl;
+        cout << "13." << menu13.menu << "\t\tRp." << menu13.harga <<endl;
+        cout << "14." << menu14.menu << "\t\tRp." << menu14.harga <<endl;
+        cout << "15." << menu15.menu << "\t\tRp." << menu15.harga <<endl;
+        cout << "0. Selesai" <<endl;
+        cout << "Silahkan pilih menu [1-15] :" <<endl;
+        cin >> menuPilihan;
+            if(menuPilihan == 1){
+                cout << "Berapa jumlah " << menu1.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah1;
+                enter();
+            } else if(menuPilihan == 2){
+                cout << "Berapa jumlah " << menu2.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah2;
+                enter();
+            } else if(menuPilihan == 3){
+                cout << "Berapa jumlah " << menu3.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah3;
+                enter();
+            } else if(menuPilihan == 4){
+                cout << "Berapa jumlah " << menu4.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah4;
+                enter();
+            } else if(menuPilihan == 5){
+                cout << "Berapa jumlah " << menu5.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah5;
+                enter();
+            } else if(menuPilihan == 6){
+                cout << "Berapa jumlah " << menu6.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah6;
+                enter();
+            } else if(menuPilihan == 7){
+                cout << "Berapa jumlah " << menu7.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah7;
+                enter();
+            } else if(menuPilihan == 8){
+                cout << "Berapa jumlah " << menu8.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah8;
+                enter();
+            } else if(menuPilihan == 9){
+                cout << "Berapa jumlah " << menu9.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah9;
+                enter();
+            } else if(menuPilihan == 10){
+                cout << "Berapa jumlah " << menu10.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah10;
+                enter();
+            } else if(menuPilihan == 11){
+                cout << "Berapa jumlah " << menu11.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah11;
+                enter();
+            } else if(menuPilihan == 12){
+                cout << "Berapa jumlah " << menu12.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah12;
+                enter();
+            } else if(menuPilihan == 13){
+                cout << "Berapa jumlah " << menu13.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah13;
+                enter();
+            } else if(menuPilihan == 14){
+                cout << "Berapa jumlah " << menu14.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah14;
+                enter();
+            } else if(menuPilihan == 15){
+                cout << "Berapa jumlah " << menu15.menu << " yang kamu inginkan? : " <<endl;
+                cin >> jumlah15;
+                enter();
+            } else if(menuPilihan == 0){
+            } else {
+                cout << "Maaf, tidak ada pilihan tersebut." <<endl;
+                enter();
+            }
+        } while(menuPilihan != 0);
+
+
+        cout << "Tagihan Belanja" <<endl;
+        cout << "=================================" <<endl;
+
+
+            if(jumlah1 >= 1){
+                cout << menu1.menu << "  " << jumlah1 << "x\t\tRp." << menu1.harga * jumlah1 <<endl;
+            };
+            if(jumlah2 >= 1){
+                cout << menu2.menu << "  " << jumlah2 << "x\t\tRp." << menu2.harga * jumlah2 <<endl;
+            };
+            if(jumlah3 >= 1){
+                cout << menu3.menu << "  " << jumlah3 << "x\t\tRp." << menu3.harga * jumlah3 <<endl;
+            };
+            if(jumlah4 >= 1){
+                cout << menu4.menu << "  " << jumlah4 << "x\t\tRp." << menu4.harga * jumlah4 <<endl;
+            };
+            if(jumlah5 >= 1){
+                cout << menu5.menu << "  " << jumlah5 << "x\t\tRp." << menu5.harga * jumlah5 <<endl;
+            };
+            if(jumlah6 >= 1){
+                cout << menu6.menu << "  " << jumlah6 << "x\t\tRp." << menu6.harga * jumlah6 <<endl;
+            };
+            if(jumlah7 >= 1){
+                cout << menu7.menu << "  " << jumlah7 << "x\t\tRp." << menu7.harga * jumlah7 <<endl;
+            };
+            if(jumlah8 >= 1){
+                cout << menu8.menu << "  " << jumlah8 << "x\t\tRp." << menu8.harga * jumlah8 <<endl;
+            };
+            if(jumlah9 >= 1){
+                cout << menu9.menu << "  " << jumlah9 << "x\tRp." << menu9.harga * jumlah9 <<endl;
+            };
+            if(jumlah10 >= 1){
+                cout << menu10.menu << "  " << jumlah10 << "x\t\tRp." << menu10.harga * jumlah10 <<endl;
+            };
+            if(jumlah11 >= 1){
+                cout << menu11.menu << "  " << jumlah11 << "x\t\tRp." << menu11.harga * jumlah11 <<endl;
+            };
+            if(jumlah12 >= 1){
+                cout << menu12.menu << "  " << jumlah12 << "x\t\tRp." << menu12.harga * jumlah12 <<endl;
+            };
+            if(jumlah13 >= 1){
+                cout << menu13.menu << "  " << jumlah13 << "x\t\tRp." << menu13.harga * jumlah13 <<endl;
+            };
+            if(jumlah14 >= 1){
+                cout << menu14.menu << "  " << jumlah14 << "x\t\tRp." << menu14.harga * jumlah14 <<endl;
+            };
+            if(jumlah15 >= 1){
+                cout << menu15.menu << "  " << jumlah15 << "x\t\tRp." << menu15.harga * jumlah15 <<endl;
+            };
+
+
+        totalHarga = (menu1.harga * jumlah1)
+        + (menu2.harga * jumlah2)
+        + (menu3.harga * jumlah3)
+        + (menu4.harga * jumlah4)
+        + (menu5.harga * jumlah5)
+        + (menu6.harga * jumlah6)
+        + (menu7.harga * jumlah7)
+        + (menu8.harga * jumlah8)
+        + (menu9.harga * jumlah9)
+        + (menu10.harga * jumlah10)
+        + (menu11.harga * jumlah11)
+        + (menu12.harga * jumlah12)
+        + (menu13.harga * jumlah13)
+        + (menu14.harga * jumlah14)
+        + (menu15.harga * jumlah15);
+        cout << "---------------------------------" <<endl;
+        cout << "Total : \t\tRp." << totalHarga <<endl;
+        cout <<endl;
+        cout << "Terima kasih atas pesanannya, silahkan bayar di kasir sesuai harga." <<endl;
+        cout << "Pesanan Anda akan segera tiba." <<endl;
+
+
+    return 0;
+}
