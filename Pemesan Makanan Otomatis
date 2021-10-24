@@ -1,16 +1,17 @@
+//C++ Code
 #include <iostream>
 
 using namespace std;
 
 
-
+//Fungsi "tekan enter untuk lanjut"
 void enter(){
     cin.ignore();
     cout << "Tekan Enter untuk lanjut." <<endl;
     cin.get();
 }
 
-
+//Class untuk membuat objek bernama List Menu untuk mempermudah penulisan kode
 class ListMenu {
     public:
         string menu;
